@@ -1,0 +1,78 @@
+body {
+  margin:0;
+  font-family: 'Alice', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.contact_button{
+  background-color: lightskyblue;
+  border: none;
+  color: white;
+  padding: 25px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 0px;
+  cursor: pointer;
+  border-radius: 80%;
+  align-self: center;
+}
+
+li {
+  float: right;
+  background-color: skyblue
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: dodgerblue;
+}
+
+.active {
+  background-color: skyblue;
+}
+
+header {
+  overflow: hidden;
+}
+
+.sections{
+  padding-left: 100px;
+  padding-right: 100px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.textInSection{
+ padding-left: 20px;
+}
+
+.imageInSection{
+  height: 400px;
+}
+
+h1{
+  font-size: 80px;
+  font-family: "Alice";
+}
+
+
+
