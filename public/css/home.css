@@ -1,78 +1,131 @@
 body {
   margin:0;
-  font-family: 'Alice', sans-serif;
+  font-family: 'News Cycle', sans-serif;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  background-color: white;
-  position: fixed;
-  top: 0;
+.navbar {
+  padding: .8rem;
+}
+
+.navbar-nav {
+  padding-right: 20px;
+}
+
+.nav-link {
+  font-size: 1.60em !important;
+}
+
+
+.navbar img {
+  width: 55%;
+}
+
+.carousel-inner img {
   width: 100%;
+  height: 31rem;
 }
 
-.contact_button{
-  background-color: lightskyblue;
-  border: none;
-  color: white;
-  padding: 25px 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 20px 0px;
-  cursor: pointer;
-  border-radius: 80%;
-  align-self: center;
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-75%);
+  padding: .5rem;
+}
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
 }
 
-li {
-  float: right;
-  background-color: skyblue
+.carousel-caption h1 {
+  font-size: 600%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #000;
+  font-weight: 100;
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 15px 30px;
-  text-decoration: none;
+.btn-primary {
+  background-color: #f29898;
+  border: 1px solid #f29898;
+  margin: 5px;
 }
 
-li a:hover:not(.active) {
-  background-color: dodgerblue;
+.btn-outline-light {
+  margin: 5px;
 }
 
-.active {
-  background-color: skyblue;
+.btn-primary:hover {
+  background-color: #563d7c;
+  border: 1px solid #563d7c; 
 }
 
-header {
-  overflow: hidden;
+.padding {
+  padding-bottom: 2rem;
 }
 
-.sections{
-  padding-left: 100px;
-  padding-right: 100px;
-
-  display: flex;
-  flex-direction: row;
+.card {
+  margin-top: 1.5rem;
 }
 
-.textInSection{
- padding-left: 20px;
+.fa-address-card {
+  font-size: 10rem;
+  color: #F36737;
 }
 
-.imageInSection{
-  height: 400px;
+.fa-address-book {
+  font-size: 8.5rem;
+  color: #ACF646;
+  margin: .9rem;
 }
 
-h1{
-  font-size: 80px;
-  font-family: "Alice";
+.fa-keyboard {
+  font-size: 10rem;
+  color: #46E7F6;
+  margin-top: .2rem;
 }
 
+.card {
+  height: 100%;
+}
 
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
 
+.display-4 {
+  font-size: 400%;
+}
+
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+
+.fa-facebook {
+  font-size: 4rem;
+  color: #DC46F6;
+  margin: 2.5rem;
+}
+
+.fa-twitter {
+  font-size: 4rem;
+  color: #DC46F6;
+  margin: 2.5rem;
+}
+
+.fa-instagram {
+  font-size: 4rem;
+  color: #DC46F6;
+  margin: 2.5rem;
+}
+
+.fa-instagram:hover, .fa-twitter:hover, .fa-facebook:hover {
+  text-shadow: 1px 1px 10px lightgray;
+  color: #E896F6;
+  margin-top: 2rem;
+}

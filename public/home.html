@@ -1,46 +1,144 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <title>Pride Parlor</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alice:400">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/home.css">
   </head>
 
   <body>
-    <header>
-      <ul>
-          <li><a href="/profile">Profile</a></li>
-          <li><a href="/directory">Directory</a></li>
-          <li><a href="/concern">Concern</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li><a href="/login">Log in</a></li>
-          <li><a  href="/home">Home</a></li>
-      </ul>
-    </header>
-  <div class="sections">
-      <h1> Charity </h1>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand"><img src="img/logoplaceholder.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="/home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="/login" class="nav-link">Login</a>
+            </li>
+            <li class="nav-item">
+                <a href="/concern" class="nav-link">Concern</a>
+            </li>
+            <li class="nav-item">
+                <a href="/contact" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a href="/directory" class="nav-link">Directory</a>
+            </li>  
+            <li class="nav-item">
+                <a href="/profile" class="nav-link">Profile</a>
+            </li> 
+          </ul>
+        </div>
       </div>
-  <div class="sections">
-    <div class="textInSection">
-      <h2>Who are we </h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus lectus, vulputate vel nulla nec, sodales iaculis nisi. Aliquam cursus consectetur commodo. Praesent non sapien viverra, tempor orci id, auctor lacus. Proin gravida lectus at fringilla tempor. Etiam rhoncus suscipit ullamcorper. Donec in erat suscipit, commodo sapien quis, ullamcorper augue. Aliquam in lacus et ipsum ornare malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc maximus volutpat ante, a vestibulum enim fermentum et. Nulla sed metus sit amet augue semper porttitor ut id odio. Aliquam cursus ipsum sed purus pellentesque, eget aliquet dui rutrum. Nunc mi ante, accumsan iaculis porttitor euismod, egestas at metus. Vivamus ultrices dolor mi.
-      </p>
-    </div>
-  </div>
+    </nav>
 
-  <div class="sections">
-    <div class="textInSection">
-      <h2>Our Missions</h2>
-      <p>Curabitur luctus quam eget urna scelerisque, ut ornare massa vestibulum. Vestibulum consequat suscipit mauris, vel consectetur ipsum aliquam vitae. Aliquam ut libero feugiat, ullamcorper magna eu, ullamcorper augue. Sed vitae metus leo. Ut eget purus justo. In vulputate auctor lacinia. Pellentesque faucibus lorem risus, non tempor tellus interdum bibendum. Mauris dignissim ornare urna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer metus nibh, iaculis vel enim quis, faucibus commodo ipsum. Pellentesque non leo id massa congue pellentesque. Maecenas ultrices hendrerit pellentesque. </p>
-    </div>
-   
-  </div>
-    <div class="sections">
-    <div class="textInSection">
-      <h2>Get Involved</h2>
-      <p>Donec id tincidunt odio. Nulla eget diam ipsum. Donec maximus sodales velit, sit amet mattis sapien convallis quis. Praesent hendrerit condimentum velit, sit amet vehicula enim dictum vel. Mauris euismod egestas tortor, et consequat mi imperdiet nec. Morbi quis quam feugiat, accumsan nibh nec, luctus sem. Fusce non tincidunt magna, sed eleifend justo. Etiam sagittis, arcu non tincidunt pulvinar, massa eros bibendum ex, in faucibus magna odio eu arcu. Fusce mollis ultricies feugiat. Phasellus lacinia nulla eget nulla imperdiet, sodales imperdiet risus laoreet. Praesent scelerisque velit mauris, id tristique nunc porttitor et. Vivamus porttitor magna et lectus fermentum vulputate. Suspendisse tincidunt ligula velit, gravida elementum nibh suscipit id. Cras sed mi porttitor, ullamcorper nulla non, interdum elit. Sed orci augue, gravida ac eros non, lacinia tempus turpis. Mauris maximus mi a nibh sodales, in congue orci consectetur. </p>
-    </div>
-      
-  </div>
+
+
+    <!-- Slideshow -->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#slides" data-slide-to="0" class="active"></li>
+          <li data-target="#slides" data-slide-to="1"></li>
+          <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/prideflag.jpeg" alt="">
+            <div class="carousel-caption">
+              <h1 class="display-2">Pride Parlor</h1>
+              <h3>LGBTQIA+ Resource</h3>
+              <a href="/login"><button type="button" class="btn btn-outline-light btn-lg">Log In</button></a>
+              <a href="/profile"><button type="button" class="btn btn-primary btn-lg">Get Started</button></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/loveislove.jpeg" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="img/landscape.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- Information Cards -->
+      <div class="container-fluid padding">
+          <div class="row padding">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-img-top text-center">
+                    <i class="far fa-address-card"></i>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Meet the Team</h4>
+                  <p class="card-text">Learn about the team members who are committed to maintaining a safe and helpful environment on this website.</p>
+                  <a href="#" class="btn btn-outline-secondary">See Team</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                  <div class="card-img-top text-center">
+                      <i class="far fa-address-book"></i>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Directory</h4>
+                    <p class="card-text">Take advantage of our useful directory that will connect you to useful resources.</p>
+                    <a href="/directory" class="btn btn-outline-secondary">See Directory</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                  <div class="card-img-top text-center">
+                      <i class="far fa-keyboard"></i>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Contact Us</h4>
+                    <p class="card-text">Get in contact with us to ask any questions or inquire about opportunities.</p>
+                    <a href="#" class="btn btn-outline-secondary">See Contact</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mission Statement -->
+        <div class="container-fluid padding">
+            <div class="row welcome text-center">
+              <div class="col-12">
+                <h1 class="display-4">Our Mission Statement...</h1>
+              </div>
+              <hr>
+              <div class="col-12">
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore veritatis odit optio, quia fuga maiores adipisci tempore incidunt? Et non nesciunt iusto eos praesentium provident inventore laudantium sapiente nam aut.</p>
+              </div>
+            </div>
+          </div>
+
+          <!--Social Media Icons-->
+          <div class="container-fluid padding">
+              <div class="row text-center padding">
+                <div class="col-12 social padding">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
   </body>
 </html>
