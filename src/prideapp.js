@@ -94,33 +94,34 @@ app.get('/contact', (req,res) => {  // contact page
 
 
 app.get('/directory', (req,res) => {  // directory home
-    // Create path to directoryBusiness.html
-    const businessPath = path.join(publicPath, '/directoryBusiness.html');
-    // Send the directoryBusiness.html file as a response
-    res.sendFile(businessPath);
+    // Create path to directory.html
+    const directoryPath = path.join(publicPath, '/directory.html');
+    // Send the directory.html file as a response
+    res.sendFile(directoryPath);
 });
 
+//////
 app.get('/directory/business', (req,res) =>{
         // Create path to directoryBusiness.html
-        const businessPath = path.join(publicPath, '/directoryBusiness.html');
+        const businessPath = path.join(publicPath, './directory/directoryBusiness.html');
         // Send the directoryBusiness.html file as a response
         res.sendFile(businessPath);
 });
 
 app.get('/directory/support', (req,res) =>{
         // Create path to directorySupport.html
-        const supportPath = path.join(publicPath, '/directorySupport.html');
+        const supportPath = path.join(publicPath, './directory/directorySupport.html');
         // Send the directorySupport.html file as a response
         res.sendFile(supportPath);
 });
 
 app.get('/directory/events', (req,res) =>{
         // Create path to directoryEvents.html
-        const eventsPath = path.join(publicPath, '/directoryEvents.html');
+        const eventsPath = path.join(publicPath, './directory/directoryEvents.html');
         // Send the directoryEvents.html file as a response
         res.sendFile(eventsPath);
 });
-
+//////
 
 // Start the localhost server on port 3000
 app.listen(3000, () => {

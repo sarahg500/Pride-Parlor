@@ -1,0 +1,101 @@
+*{
+
+  font-family: 'Open Sans Condensed', sans-serif;
+} 
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.contact_button{
+  background-color: lightskyblue;
+  border: none;
+  color: white;
+  padding: 25px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 0px;
+  cursor: pointer;
+  border-radius: 80%;
+  align-self: center;
+}
+
+li {
+  float: right;
+  background-color: skyblue
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: dodgerblue;
+}
+
+.active {
+  background-color: skyblue;
+}
+
+
+.title{
+	text-align: center;
+  font-size: 70px;
+  font-weight: bolder;
+  color: black;
+  text-shadow: 2px 2px 4px #000000; 
+}
+
+.directory-page1{
+
+  background-color: rgb(185, 225, 250);
+  text-align: center;
+  padding: 15px 30px;
+  
+
+  
+}
+
+.directory-page1 h2 a{
+  text-decoration: none;
+  font-size: 40px;
+
+}
+
+.directory-page2{
+  background-color: rgb(144, 222, 253);
+  text-align: center;
+  padding: 15px 30px;
+
+}
+
+.directory-page2 h2 a{
+  text-decoration: none;
+  font-size: 40px;
+
+}
+
+.directory-page3{
+  background-color: rgb(108, 198, 253);
+  text-align: center;
+  padding: 15px 30px;
+
+}
+
+.directory-page3 h2 a{
+  text-decoration: none;
+  font-size: 40px;
+
+}

@@ -32,10 +32,6 @@ const userSchema = new mongoose.Schema({
     sexualorientation: {
         type: String,
         trim: true
-    },
-    usertype: {
-        type: String,
-        trim: true
     }
 });
 userSchema.statics.findByCredentials = async(email, password) =>{
