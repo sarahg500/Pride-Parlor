@@ -62,9 +62,11 @@ app.post('/profile', async (req,res) => {
     console.log(user);
     try {
         await user.save();
-        res.status(201).send('User registered!');
+        const signupsuccessPath = path.join(publicPath, '/signupsuccess.html');
+        res.status(201).sendFile(signupsuccessPath);
     } catch (e) {
-        res.status(400).send('Could not register user. Check to assure you filled out each field correctly.');
+        const signupfailurePath = path.join(publicPath, '/signupfailure.html');
+        res.status(400).sendFile(signupfailurePath);
     }
 });
 
